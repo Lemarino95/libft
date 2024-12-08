@@ -1,7 +1,21 @@
+/*
+n: The integer to output.
+fd: The file descriptor on which to write.
+Outputs the integer ’n’ to the given file
+descriptor. 
+*/
+
 #include "libft.h"
 
 void	ft_putnbr_fd(int n, int fd)
 {
+	char	*s;
+
+	s = ft_itoa(n);
+	ft_putstr_fd(s, fd);
+	free(s); 
+/*
+############# In alternative:#############
 	char	digit;
 
 	if (n == -2147483648)
@@ -20,4 +34,5 @@ void	ft_putnbr_fd(int n, int fd)
 	}
 	digit = (n % 10) + '0';
 	write(fd, &digit, 1);
+*/
 }
