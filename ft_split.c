@@ -1,3 +1,8 @@
+// Allocates (with malloc) and returns an array of strings obtained by splitting ’s’ using the character ’c’ as a delimiter.
+// 	The array must end with a NULL pointer.
+// 	Returns the array of new strings resulting from the split. NULL if the allocation fails.
+
+
 #include "libft.h"
 
 static int	count_words(const char *str, char c)
