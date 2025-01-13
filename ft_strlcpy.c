@@ -8,7 +8,7 @@
 size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
 	size_t	i;
-	unsigned int	j;
+	size_t	j;
 
 	i = 0;
 	j = 0;
