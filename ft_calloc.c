@@ -8,6 +8,8 @@
 void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*str;
+	size_t			i;
+	unsigned char	*c;
 
 	if (nmemb == 0 || size == 0)
 	{
@@ -17,6 +19,9 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	str = malloc((nmemb * size));
 	if (!str)
 		return (NULL);
-	ft_bzero(str, (nmemb * size));
+	i = 0;
+	c = (unsigned char *)str;
+	while (i < (nmemb * size))
+		c[i++] = '\0';
 	return (str);
 }
