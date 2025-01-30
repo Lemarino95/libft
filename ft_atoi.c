@@ -1,7 +1,5 @@
-//The atoi() function converts the initial portion of the string pointed to by nptr to int.
-
 #include "libft.h"
-
+//The atoi() function converts the initial portion of the string pointed to by nptr to int.
 int	ft_atoi(const char *nptr)
 {
 	int	i;
