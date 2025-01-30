@@ -1,7 +1,5 @@
-//Returns a pointer to the first occurrence of the character c in the string s.
-
 #include "libft.h"
-
+//Returns a pointer to the first occurrence of the character c in the string s.
 char	*ft_strchr(const char *s, int c)
 {
 	int		i;
