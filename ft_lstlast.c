@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-
+// Returns the last node of the list.
 t_list	*ft_lstlast(t_list *lst)
 {
 	if (!lst)
@@ -20,18 +20,3 @@ t_list	*ft_lstlast(t_list *lst)
 		lst = lst -> next;
 	return (lst);
 }
-
-/* int	main()
-{
-	t_list	*node;
-	char	*content;
-
-	node = malloc(sizeof(t_list));
-	node -> content = "Disney inferno ";
-	node -> next = malloc(sizeof(t_list));
-	node -> next -> content = "e' il paese dei balocchi ";
-	node -> next -> next -> next = NULL;
-	node = ft_lstlast(node);
-	printf("%s\n", (char *)node -> content);
-} */
-// Returns the last node of the list.
