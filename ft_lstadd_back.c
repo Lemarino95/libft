@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-
+// Adds the node 'new' at the end of the list.
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*temp;
@@ -29,27 +29,3 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	temp -> next = new;
 	return ;
 }
-
-/* int	main()
-{
-	t_list	*node;
-	// t_list	*new;
-	char	*content;
-
-	node = malloc(sizeof(t_list));
-	node -> content = "Disney inferno ";
-	node -> next = malloc(sizeof(t_list));
-	node -> next -> content = "e' il paese dei balocchi ";
-	node -> next -> next = malloc(sizeof(t_list));
-	node -> next -> next -> content = "dove tutti i principi...";
-	node -> next -> next -> next = NULL;
-	// new = malloc(sizeof(t_list));
-	// new -> content = "Qui e' divertimento sano per tutti i marmocchi!";
-	ft_lstadd_back(&node, ft_lstnew("... diventano ranocchi!"));
-	while (node != NULL)
-	{
-		printf("%s\n", (char *)node -> content);
-		node = node -> next;
-	}
-} */
-// Adds the node 'new' at the end of the list.
