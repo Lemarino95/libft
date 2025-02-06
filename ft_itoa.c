@@ -20,6 +20,8 @@ static char	*ft_placenbr(char *s, size_t c, int n)
 		s[c--] = (n % 10) + 48;
 		n /= 10;
 	}
+	if (n == 1)
+		s[c] = n + 48;
 	return (s);
 }
 
